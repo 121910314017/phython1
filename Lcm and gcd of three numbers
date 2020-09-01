@@ -1,0 +1,20 @@
+
+input:
+
+import math
+n1= int(input("Enter First number:"))
+n2=int(input("Enter Second number:"))
+n3= int(input("Enter third number:"))
+GCD1 = math.gcd(n1,n2)
+GCD2=math.gcd(GCD1,n3)
+LCM = n1*n2/GCD2
+print("LCM is ",LCM)
+print("GCD is ",GCD2)
+
+output:
+
+Enter First number:10
+Enter Second number:5
+Enter third number:15
+LCM is  30.0
+GCD is  5
