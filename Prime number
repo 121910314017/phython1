@@ -1,0 +1,23 @@
+program on printing prime numbers within a specified limit
+input:
+
+start=int(input("enter starting number: "))
+end=int(input("enter ending number: "))
+print("prime numbers between ",start,"and",end)
+for x in range(start,end+1):
+    if x>1:
+        for i in range(2,x):
+            if(x%i)==0:
+                break
+        else:
+                print(x)
+                
+output:
+
+enter starting number: 1
+enter ending number: 10
+prime numbers between  1 and 10
+2
+3
+5
+7
