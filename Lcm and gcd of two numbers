@@ -1,0 +1,21 @@
+input:
+
+n1=int(input("enter the first number:"))
+n2=int(input("enter the second number:"))
+def GCD(n1,n2):
+    while n2 > 0:
+        n1,n2 = n2,n1 % n2
+    return n1
+
+def LCM(x, y):
+    return n1 * n2 / GCD(n1,n2)
+
+print("LCM is " ,LCM(n1,n2))
+print("GCD is " , GCD(n1,n2))
+
+output:
+
+enter the first number:10
+enter the second number:50
+LCM is  50.0
+GCD is  10
