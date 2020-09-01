@@ -1,0 +1,13 @@
+program on swapping of two numbers
+input:
+
+x=int(input("enter x number: "))
+y=int(input("enter y number: "))
+x,y=y,x
+print(" x is",x,"and y is",y)
+
+output:
+
+enter x number: 1
+enter y number: 2
+x is 2 and y is 1
