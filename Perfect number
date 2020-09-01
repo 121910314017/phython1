@@ -1,0 +1,19 @@
+#check whether a number is perfect or not
+
+input:
+
+x=int(input("enter a number: "))
+sum=0
+for i in range(1,x):
+    if(x%i==0):
+        sum+=i
+if(sum==x):
+    print(x," is a perfect number ")
+else:
+    prin6t(x," is not a perfect number")
+    
+output:
+enter a number: 6
+6  is a perfect number 
+enter a number: 25
+25  is not a perfect number
