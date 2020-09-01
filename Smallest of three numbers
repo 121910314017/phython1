@@ -1,0 +1,19 @@
+input:
+
+#code for smallest of three numbers
+n1=int(input("enter first number: "))
+n2=int(input("enter second number: "))
+n3=int(input("enter third number: "))
+if n1<n2 and n1<n3:
+    smallest=n1
+elif n2<n1 and n2<n3:
+    smallest=n2
+else:
+    smallest=n3
+print("smallest of three numbers is ",smallest)
+
+output:
+enter first number: 11
+enter second number: 2
+enter third number: 6
+smallest of three numbers is  2
