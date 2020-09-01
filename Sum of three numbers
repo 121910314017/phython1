@@ -1,0 +1,13 @@
+input:
+print("sana-121910314017")
+a=int(input())
+b=int(input())
+c=int(input())
+sum=a+b+c
+print("sum=",sum)
+ouput:
+Sana-121910314017
+2
+3
+4
+sum=9
