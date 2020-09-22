@@ -1,0 +1,35 @@
+improvised of third program
+ro= int(input(" number of rows:"))
+co = int(input(" number of columns:"))
+matrix = []
+for i in range(ro):
+    a = []
+    for j in range(co):
+        a.append(int(input()))
+    matrix.append(a)
+    print(a)
+
+
+thresh=1
+sparse=[]
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        if matrix[i][j]<thresh+1:
+            matrix[i][j]=0
+        if matrix[i][j] != 0:
+            temp = [i, j, matrix[i][j]]
+            sparse.append(temp)
+print(sparse)
+
+C:\Users\Administrator\anaconda3\envs\pythonProject3\python.exe C:/Users/Administrator/PycharmProjects/pythonProject3/cc.py
+ number of rows:2
+ number of columns:2
+1
+2
+[1, 2]
+3
+4
+[3, 4]
+[[0, 1, 2], [1, 0, 3], [1, 1, 4]]
+
+Process finished with exit code 0
