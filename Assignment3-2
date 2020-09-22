@@ -1,0 +1,38 @@
+Represent a sparse matrix through user defined function.
+
+matrix = [
+    [10, 1, 0, 0, 4],
+    [0, 2, 5, 7, 0],
+    [0, 8, 0, 0, 0],
+    [0, 2, 0, 0, 0]
+]
+def a(matrix): #it works when we call it
+    k = 0
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            if matrix[i][j] != 0:
+                k += 1
+    sparse = []
+    for i in range(len(matrix)):  
+        for j in range(len(matrix[0])):
+            if matrix[i][j] != 0:
+                temp = [i, j, matrix[i][j]]
+                sparse.append(temp)
+
+    return sparse
+
+print(a(matrix))
+
+
+
+ C:\Users\Administrator\anaconda3\envs\pythonProject3\python.exe C:/Users/Administrator/PycharmProjects/pythonProject3/cc.py
+[[0, 0, 10],
+[0, 1, 1],
+[0, 4, 4],
+[1, 1, 2],
+[1, 2, 5],
+[1, 3, 7], 
+[2, 1, 8],
+[3, 1, 2]]
+
+Process finished with exit code 0
